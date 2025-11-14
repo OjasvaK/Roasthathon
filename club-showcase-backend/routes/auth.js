@@ -168,7 +168,8 @@ router.post('/login', [
 // Get test credentials endpoint (for development only)
 router.get('/test-credentials', (req, res) => {
   res.json({
-    message: 'Test Credentials (Development Only)',
+    message: 'CIPHER SHOWCASE - Test Credentials (Development Only)',
+    app: 'CIPHER SHOWCASE',
     credentials: [
       {
         email: 'admin@club.com',

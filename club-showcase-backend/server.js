@@ -11,7 +11,7 @@ app.use(express.json());
 app.use(express.urlencoded({ limit: '50mb', extended: true }));
 
 // MongoDB Connection
-mongoose.connect(process.env.MONGODB_URI || 'mongodb://localhost:27017/club-showcase')
+mongoose.connect(process.env.MONGODB_URI || 'mongodb://localhost:27017/cipher-showcase')
   .then(() => console.log('MongoDB connected'))
   .catch(err => console.log('MongoDB connection error:', err));
 
@@ -29,7 +29,11 @@ app.use('/api/users', userRoutes);
 
 // Health check
 app.get('/api/health', (req, res) => {
-  res.json({ status: 'Backend is running' });
+  res.json({ 
+    status: 'Backend is running',
+    app: 'CIPHER SHOWCASE',
+    version: '1.0.0'
+  });
 });
 
 // Error handling middleware
