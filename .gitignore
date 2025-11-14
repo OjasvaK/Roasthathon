@@ -1,0 +1,28 @@
+# Backend
+club-showcase-backend/node_modules/
+club-showcase-backend/.env
+club-showcase-backend/.DS_Store
+club-showcase-backend/dist/
+
+# Frontend
+club-showcase-frontend/node_modules/
+club-showcase-frontend/.env
+club-showcase-frontend/.env.local
+club-showcase-frontend/.DS_Store
+club-showcase-frontend/build/
+club-showcase-frontend/.next/
+
+# IDE
+.vscode/
+.idea/
+*.swp
+*.swo
+
+# OS
+.DS_Store
+Thumbs.db
+
+# Logs
+logs/
+*.log
+npm-debug.log*
