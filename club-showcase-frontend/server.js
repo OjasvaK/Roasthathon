@@ -4,29 +4,68 @@ const path = require('path');
 
 const PORT = 3000;
 
+// Read HTML template once
+let htmlContent = '';
+try {
+  htmlContent = fs.readFileSync(path.join(__dirname, 'public', 'index.html'), 'utf8');
+} catch (e) {
+  console.error('Failed to read index.html:', e);
+  htmlContent = '<html><body>Index.html not found</body></html>';
+}
+
 const server = http.createServer((req, res) => {
-  // Handle requests for static files
-  let filePath = path.join(__dirname, 'public', req.url === '/' ? 'index.html' : req.url);
+  // Enable CORS
+  res.setHeader('Access-Control-Allow-Origin', '*');
+  res.setHeader('Access-Control-Allow-Methods', 'GET, POST, PUT, PATCH, DELETE, OPTIONS');
+  res.setHeader('Access-Control-Allow-Headers', 'Content-Type, Authorization');
+  res.setHeader('Cache-Control', 'no-cache');
   
-  // Try to read the file
+  if (req.method === 'OPTIONS') {
+    res.writeHead(200);
+    res.end();
+    return;
+  }
+
+  // Remove query string
+  let reqPath = req.url.split('?')[0];
+  
+  // Serve root and SPA routes as index.html
+  if (reqPath === '/' || reqPath.endsWith('.html') || !path.extname(reqPath)) {
+    res.writeHead(200, { 'Content-Type': 'text/html; charset=utf-8' });
+    res.end(htmlContent);
+    return;
+  }
+
+  // Try to serve static files from public folder
+  let filePath = path.join(__dirname, 'public', reqPath);
+  
   fs.readFile(filePath, (err, content) => {
     if (err) {
-      // Default to index.html for SPA routing
-      fs.readFile(path.join(__dirname, 'public', 'index.html'), (err, content) => {
-        res.writeHead(200, { 'Content-Type': 'text/html' });
-        res.end(content);
-      });
+      // File not found, serve index.html for SPA routing
+      res.writeHead(200, { 'Content-Type': 'text/html; charset=utf-8' });
+      res.end(htmlContent);
     } else {
-      // Set content type based on file extension
+      // Determine content type
+      const ext = path.extname(filePath).toLowerCase();
       let contentType = 'text/html';
-      const ext = path.extname(filePath);
       
-      if (ext === '.js') contentType = 'application/javascript';
-      if (ext === '.css') contentType = 'text/css';
-      if (ext === '.json') contentType = 'application/json';
-      if (ext === '.png') contentType = 'image/png';
-      if (ext === '.jpg') contentType = 'image/jpeg';
-      if (ext === '.svg') contentType = 'image/svg+xml';
+      const mimeTypes = {
+        '.js': 'application/javascript',
+        '.css': 'text/css',
+        '.json': 'application/json',
+        '.png': 'image/png',
+        '.jpg': 'image/jpeg',
+        '.jpeg': 'image/jpeg',
+        '.gif': 'image/gif',
+        '.svg': 'image/svg+xml',
+        '.ico': 'image/x-icon',
+        '.woff': 'font/woff',
+        '.woff2': 'font/woff2',
+        '.ttf': 'font/ttf',
+        '.eot': 'application/vnd.ms-fontobject'
+      };
+      
+      contentType = mimeTypes[ext] || 'text/html';
       
       res.writeHead(200, { 'Content-Type': contentType });
       res.end(content);
@@ -38,10 +77,16 @@ server.listen(PORT, () => {
   console.log(`\n✅ Frontend server running on http://localhost:${PORT}\n`);
   console.log('📝 Make sure backend is running on http://localhost:5000\n');
   console.log('Available routes:');
-  console.log('  - / (Home)');
-  console.log('  - /projects (Project Showcase)');
-  console.log('  - /forum (Forum/Ideas)');
-  console.log('  - /upload (Upload Project)');
-  console.log('  - /auth (Login/Register)');
-  console.log('  - /profile (User Profile)\n');
+  console.log('  - http://localhost:3000              (Home)');
+  console.log('  - http://localhost:3000/projects     (Project Showcase)');
+  console.log('  - http://localhost:3000/forum        (Forum/Ideas)');
+  console.log('  - http://localhost:3000/upload       (Upload Project)');
+  console.log('  - http://localhost:3000/auth         (Login/Register)');
+  console.log('  - http://localhost:3000/profile      (User Profile)\n');
+});
+
+process.on('SIGINT', () => {
+  console.log('\n✋ Server stopping...');
+  server.close();
+  process.exit(0);
 });
