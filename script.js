@@ -15,7 +15,7 @@ let projects = [
         author: 'Rudransh Shinghal',
         tech: ['Defi'],
         github: 'https://github.com/Ansh1902396/portfolio-rebalancer',
-        likes: 20
+        
     },
     {
         id: 2,
@@ -24,7 +24,7 @@ let projects = [
         author: 'Rudransh Shinghal',
         tech: ['Dex'],
         github: 'https://github.com/Ansh1902396/Clanker-Dex',
-        likes: 15
+        
     },
     {
         id: 3,
@@ -33,7 +33,7 @@ let projects = [
         author: 'Arya Sekhar Das',
         tech: ['Web3'],
         github: 'https://github.com/intelligent-ears/N3',
-        likes: 13
+        
     },
     {
         id: 4,
@@ -42,7 +42,7 @@ let projects = [
         author: 'Arya Sekhar Das',
         tech: ['JavaScript', 'Canvas API', 'WebGL'],
         github: 'https://github.com/intelligent-ears/CrypX',
-        likes: 25
+        
     },
     {
         id: 5,
@@ -51,7 +51,7 @@ let projects = [
         author: 'Arya Sekhar Das',
         tech: ['JavaScript', 'Canvas API', 'WebGL'],
         github: 'https://github.com/intelligent-ears/SolSniffer',
-        likes: 17
+        
     },
     {
         id: 6,
@@ -60,7 +60,7 @@ let projects = [
         author: 'Devarsh Parmar',
         tech: ['JavaScript', 'Canvas API', 'WebGL'],
         github: 'https://github.com/DEVMYTH123/Web_Pen_Tool_FSE',
-        likes: 18
+        
     },
     {
         id: 7,
@@ -69,7 +69,7 @@ let projects = [
         author: 'Parth Garg',
         tech: ['JavaScript', 'Canvas API', 'WebGL'],
         github: 'https://github.com/parthgarg351/Smart-Vending-Machine',
-        likes: 17
+        
     },
     {
         id: 8,
@@ -78,7 +78,7 @@ let projects = [
         author: 'Parth Garg',
         tech: ['JavaScript', 'Canvas API', 'WebGL'],
         github: 'https://github.com/parthgarg351/Smart-Table-Clock',
-        likes: 11
+        
     },
     {
         id: 9,
@@ -87,7 +87,7 @@ let projects = [
         author: 'Lakshya Jain',
         tech: ['JavaScript', 'Canvas API', 'WebGL'],
         github: 'https://github.com/projectman14/d8n',
-        likes: 14
+        
     },
     {
         id: 10,
@@ -96,7 +96,7 @@ let projects = [
         author: 'Siddhartha Swarnkar',
         tech: ['JavaScript', 'Canvas API', 'WebGL'],
         github: 'https://github.com/bismuth01/chainlink-price-predictor',
-        likes: 12
+        
     },
     {
         id: 11,
@@ -105,7 +105,7 @@ let projects = [
         author: 'Siddhartha Swarnkar',
         tech: ['JavaScript', 'Canvas API', 'WebGL'],
         github: 'https://github.com/bismuth01/puch-ai-virtual-pet',
-        likes: 15
+        
     },
     {
         id: 12,
@@ -114,7 +114,7 @@ let projects = [
         author: 'Harshit Nayan',
         tech: ['JavaScript', 'Canvas API', 'WebGL'],
         github: 'https://github.com/LogicalGuy77/rpg-verse-agentic',
-        likes: 27
+        
     },
     {
         id: 13,
@@ -123,7 +123,7 @@ let projects = [
         author: 'Harshit Nayan',
         tech: ['JavaScript', 'Canvas API', 'WebGL'],
         github: 'https://github.com/LogicalGuy77/tokenyzer',
-        likes: 22
+        
     },
     {
         id: 14,
@@ -132,7 +132,7 @@ let projects = [
         author: 'Harshit Nayan',
         tech: ['Python', 'TensorFlow', 'Flask'],
         github: 'https://github.com/LogicalGuy77/memory-frontend-faff',
-        likes: 17
+        
     },
     {
         id: 15,
@@ -141,7 +141,7 @@ let projects = [
         author: 'Harshit Nayan',
         tech: ['React', 'Web3.js', 'Solidity'],
         github: 'https://github.com/LogicalGuy77/memecoin-agent-frontend',
-        likes: 32
+        
     },
     {
         id: 16,
@@ -150,7 +150,7 @@ let projects = [
         author: 'Harshit Nayan',
         tech: ['Electron', 'Vue.js', 'SQLite'],
         github: 'https://github.com/LogicalGuy77/weekendly-atlan',
-        likes: 15
+        
     },
     {
         id: 17,
@@ -159,7 +159,7 @@ let projects = [
         author: 'Manan Singhal',
         tech: ['Electron', 'Vue.js', 'SQLite'],
         github: 'https://github.com/MananSinghal123/BlockStay',
-        likes: 17
+        
     },
     {
         id: 18,
@@ -168,7 +168,7 @@ let projects = [
         author: 'Manan Singhal',
         tech: ['Electron', 'Vue.js', 'SQLite'],
         github: 'https://github.com/MananSinghal123/eth-api-payments',
-        likes: 12
+        
     },
     {
         id: 19,
@@ -177,7 +177,7 @@ let projects = [
         author: 'Manan Singhal',
         tech: ['Electron', 'Vue.js', 'SQLite'],
         github: 'https://github.com/MananSinghal123/BTCShield',
-        likes: 18
+        
     },
     {
         id: 20,
@@ -186,7 +186,7 @@ let projects = [
         author: 'Ayush Petwal',
         tech: ['Electron', 'Vue.js', 'SQLite'],
         github: 'https://github.com/1Ayush-Petwal/Education-Agent',
-        likes: 19
+        
     },
     {
         id: 21,
@@ -195,7 +195,7 @@ let projects = [
         author: 'Ayush Petwal',
         tech: ['Electron', 'Vue.js', 'SQLite'],
         github: 'https://github.com/1Ayush-Petwal/CitreaMesh',
-        likes: 29
+        
     },
     {
         id: 22,
@@ -204,7 +204,7 @@ let projects = [
         author: 'Arijit Roy , Vaibhav Goyal , KAvish ',
         tech: ['Electron', 'Vue.js', 'SQLite'],
         github: 'https://github.com/arijitroy667/auction_cc',
-        likes: 9
+    
     },
     {
         id: 23,
@@ -213,7 +213,7 @@ let projects = [
         author: 'Arijit Roy',
         tech: ['Electron', 'Vue.js', 'SQLite'],
         github: 'https://github.com/arijitroy667/stargazer-social-galaxy',
-        likes: 27
+        
     },
     {
         id: 24,
@@ -222,7 +222,7 @@ let projects = [
         author: 'Arijit Roy',
         tech: ['Electron', 'Vue.js', 'SQLite'],
         github: 'https://github.com/arijitroy667/Vaultopia',
-        likes: 22
+        
     },
     {
         id: 25,
@@ -231,7 +231,7 @@ let projects = [
         author: 'Arijit Roy',
         tech: ['Electron', 'Vue.js', 'SQLite'],
         github: 'https://github.com/arijitroy667/NebulaDAO',
-        likes: 34
+        
     },
     {
         id: 26,
@@ -240,7 +240,7 @@ let projects = [
         author: 'Vaibhav Rawat',
         tech: ['Electron', 'Vue.js', 'SQLite'],
         github: 'https://github.com/Vaibhav-Rawat-cipher/Currency-Exchanger',
-        likes: 12
+        
     },
     {
         id: 27,
@@ -249,7 +249,7 @@ let projects = [
         author: 'manas hatwar',
         tech: ['Electron', 'Vue.js', 'SQLite'],
         github: 'https://github.com/manashatwar/sui_counter',
-        likes: 23
+        
     },
     {
         id: 28,
@@ -258,7 +258,7 @@ let projects = [
         author: 'Rudra Bhaskar',
         tech: ['Electron', 'Vue.js', 'SQLite'],
         github: 'https://github.com/RudraBhaskar9439/VigilBot',
-        likes: 15
+        
     },
     {
         id: 29,
@@ -267,7 +267,7 @@ let projects = [
         author: 'Rudra Bhaskar',
         tech: ['Electron', 'Vue.js', 'SQLite'],
         github: 'https://github.com/RudraBhaskar9439/Rehypothecation_UniswapV4_Hook',
-        likes: 23
+        
     },
     {
         id: 30,
@@ -276,7 +276,7 @@ let projects = [
         author: 'Rudra Bhaskar',
         tech: ['Electron', 'Vue.js', 'SQLite'],
         github: 'https://github.com/RudraBhaskar9439/Machine_Learning_Data_Illustrator',
-        likes: 23
+        
     },
     {
         id: 31,
@@ -285,7 +285,7 @@ let projects = [
         author: 'Rudra Bhaskar',
         tech: ['Electron', 'Vue.js', 'SQLite'],
         github: 'https://github.com/RudraBhaskar9439/BlockChain_Drive',
-        likes: 16
+        
     },
     {
         id: 31,
@@ -294,7 +294,7 @@ let projects = [
         author: 'Vaibhav Goyal',
         tech: ['Electron', 'Vue.js', 'SQLite'],
         github: 'https://github.com/viscous-236/INVOx',
-        likes: 12
+        
     },
     {
         id: 32,
@@ -303,7 +303,7 @@ let projects = [
         author: 'Vaibhav Goyal',
         tech: ['Electron', 'Vue.js', 'SQLite'],
         github: 'https://github.com/viscous-236/chromion-chainlink',
-        likes: 16
+        
     },
     {
         id: 33,
@@ -312,7 +312,7 @@ let projects = [
         author: 'Kavish',
         tech: ['Electron', 'Vue.js', 'SQLite'],
         github: 'https://github.com/Kavish-12345/AgriSchield-',
-        likes: 24
+        
     },
     {
         id: 34,
@@ -321,7 +321,7 @@ let projects = [
         author: 'Komal Jeengar',
         tech: ['Electron', 'Vue.js', 'SQLite'],
         github: 'https://github.com/komaljeengar/ethglobal-final-project',
-        likes: 22
+        
     },
     {
         id: 35,
@@ -330,7 +330,7 @@ let projects = [
         author: 'Amrendra',
         tech: ['Electron', 'Vue.js', 'SQLite'],
         github: 'https://github.com/AmrendraTheCoder/carpool-lnmiit-work-new',
-        likes: 13
+        
     },
     {
         id: 36,
@@ -339,7 +339,7 @@ let projects = [
         author: 'Amrendra',
         tech: ['Electron', 'Vue.js', 'SQLite'],
         github: 'https://github.com/AmrendraTheCoder/justfortheETH',
-        likes: 23
+        
     },
     {
         id: 37,
@@ -348,7 +348,7 @@ let projects = [
         author: 'Sushmit',
         tech: ['Electron', 'Vue.js', 'SQLite'],
         github: 'https://github.com/Sushmit94/zk-mail',
-        likes: 15
+        
     },
     {
         id: 38,
@@ -357,7 +357,7 @@ let projects = [
         author: 'Sushmit',
         tech: ['Electron', 'Vue.js', 'SQLite'],
         github: 'https://github.com/Sushmit94/AgriSchield_contracts',
-        likes: 16
+        
     },
     {
         id: 39,
@@ -366,7 +366,7 @@ let projects = [
         author: 'Arpit Mishra',
         tech: ['Electron', 'Vue.js', 'SQLite'],
         github: 'https://github.com/arpitmisra/sheet-ai-pro-backup',
-        likes: 17
+        
     },
     {
         id: 40,
@@ -375,147 +375,12 @@ let projects = [
         author: 'Arpit Mishra',
         tech: ['Electron', 'Vue.js', 'SQLite'],
         github: 'https://github.com/arpitmisra/envioscout-ai',
-        likes: 27
+        
     }
 ];
 
 let ideas = [
-    {
-        id: 1,
-        title: 'AR Campus Navigation App',
-        description: 'An augmented reality app that helps students navigate the campus. Point your phone at a building and get directions, info about events, and classroom locations in real-time.',
-        author: 'Admin User',
-        category: 'mobile',
-        comments: [
-            { author: 'Club Member', text: 'This would be incredibly useful during orientation week!', date: '2025-11-10' },
-            { author: 'Admin User', text: 'We could integrate it with the campus event calendar too.', date: '2025-11-11' }
-        ],
-        votes: 15,
-        date: '2025-11-09'
-    },
-    {
-        id: 2,
-        title: 'Smart Energy Monitor for Dorms',
-        description: 'IoT device that tracks electricity usage in dorm rooms. Students can see real-time consumption, get tips to save energy, and compete with friends for lowest usage.',
-        author: 'Club Member',
-        category: 'other',
-        comments: [
-            { author: 'Admin User', text: 'Great for sustainability! Could partner with the environmental club.', date: '2025-11-12' }
-        ],
-        votes: 12,
-        date: '2025-11-11'
-    },
-    {
-        id: 3,
-        title: 'AI Study Group Matcher',
-        description: 'Machine learning algorithm that matches students for study groups based on courses, learning styles, schedules, and academic goals. Like dating apps but for studying!',
-        author: 'Admin User',
-        category: 'ai',
-        comments: [],
-        votes: 20,
-        date: '2025-11-13'
-    },
-    {
-        id: 4,
-        title: 'Multiplayer Coding Challenges',
-        description: 'Real-time competitive programming platform where students can battle each other solving algorithmic challenges. Includes leaderboards, tournaments, and skill-based matchmaking.',
-        author: 'Club Member',
-        category: 'web',
-        comments: [
-            { author: 'Admin User', text: 'This could be great for interview prep!', date: '2025-11-13' },
-            { author: 'Club Member', text: 'We should add team modes for hackathon practice.', date: '2025-11-14' }
-        ],
-        votes: 28,
-        date: '2025-11-12'
-    },
-    {
-        id: 5,
-        title: 'Blockchain-Based Certificate System',
-        description: 'Create immutable, verifiable certificates for courses and achievements using blockchain. Employers can instantly verify credentials without relying on institutions.',
-        author: 'Admin User',
-        category: 'web',
-        comments: [],
-        votes: 18,
-        date: '2025-11-14'
-    },
-    {
-        id: 6,
-        title: 'AI-Powered Code Review Assistant',
-        description: 'Machine learning tool that reviews pull requests, suggests improvements, checks for security vulnerabilities, and provides instant feedback on code quality.',
-        author: 'Club Member',
-        category: 'ai',
-        comments: [
-            { author: 'Admin User', text: 'This could save developers so much time!', date: '2025-11-14' }
-        ],
-        votes: 24,
-        date: '2025-11-13'
-    },
-    {
-        id: 7,
-        title: 'Real-time Collaborative Whiteboard',
-        description: 'Web-based whiteboard where teams can collaborate in real-time during design sessions and brainstorming. Supports drawing, shapes, text, and video conferencing integration.',
-        author: 'Club Member',
-        category: 'web',
-        comments: [],
-        votes: 16,
-        date: '2025-11-12'
-    },
-    {
-        id: 8,
-        title: 'Decentralized Task Management DApp',
-        description: 'Blockchain-based task manager where teams can create, assign, and track tasks with smart contract-based rewards. Built on Ethereum with NFT badges for completion.',
-        author: 'Admin User',
-        category: 'web',
-        comments: [
-            { author: 'Club Member', text: 'Love the gamification aspect!', date: '2025-11-15' }
-        ],
-        votes: 22,
-        date: '2025-11-14'
-    },
-    {
-        id: 9,
-        title: 'IoT Smart Home Security System',
-        description: 'Affordable DIY smart home security using Arduino, motion sensors, and cloud notifications. Mobile app shows live feeds, alerts, and historical logs.',
-        author: 'Club Member',
-        category: 'mobile',
-        comments: [],
-        votes: 14,
-        date: '2025-11-11'
-    },
-    {
-        id: 10,
-        title: 'Web3 Social Network',
-        description: 'Decentralized social network where users own their data, earn tokens for content, and control their own identity without relying on centralized platforms.',
-        author: 'Admin User',
-        category: 'web',
-        comments: [
-            { author: 'Club Member', text: 'This is the future of social media!', date: '2025-11-15' }
-        ],
-        votes: 31,
-        date: '2025-11-13'
-    },
-    {
-        id: 11,
-        title: 'Game Development Framework in WebGL',
-        description: 'Open-source 2D/3D game engine built on WebGL for browser-based games. Includes physics engine, particle systems, and asset management tools.',
-        author: 'Club Member',
-        category: 'game',
-        comments: [],
-        votes: 19,
-        date: '2025-11-14'
-    },
-    {
-        id: 12,
-        title: 'Automated Market Maker (AMM) on Layer 2',
-        description: 'Create a decentralized exchange on Polygon or Arbitrum with low fees and high speed. Support for LP tokens and yield farming mechanisms.',
-        author: 'Admin User',
-        category: 'web',
-        comments: [
-            { author: 'Club Member', text: 'Great opportunity to learn DeFi!', date: '2025-11-15' }
-        ],
-        votes: 26,
-        date: '2025-11-13'
-    }
+    
 ];
 
 // DOM Elements - will be initialized when DOM is ready
@@ -834,8 +699,7 @@ function renderProjects() {
                 ${project.tech.map(tech => `<span class="tag">${tech}</span>`).join('')}
             </div>
             <div class="project-footer">
-                <a href="${project.github}" class="project-link" target="_blank">→ View on GitHub</a>
-                <span style="color: var(--primary); font-size: 0.6rem;">♥ ${project.likes}</span>
+                <a href="${project.github}" class="project-link" target="_blank">→ Source Code</a>
             </div>
         </div>
     `).join('');
