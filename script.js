@@ -1,6 +1,7 @@
 // Hardcoded credentials
 const USERS = {
     'admin': { password: 'password', name: 'Admin User', role: 'Admin' },
+    'user': { password: 'user123', name: 'Club Member', role: 'Developer' },
     'Ojasva': { password: 'ok123', name: 'Club Member', role: 'Developer' },
     'Vatsal': { password: 'vs123', name: 'Club Member', role: 'Developer' },
     'Harshit': { password: 'hl123', name: 'Club Member', role: 'Developer' },
@@ -330,7 +331,7 @@ let projects = [
         id: 35,
         name: 'carpool-lnmiit-work-new',
         description: 'Carpooling application/work-in-progress repository (frontend/backend). README minimal; inferred to be a ride-sharing/carpool coordination app for LNMIIT community.',
-        author: 'Amrendra',
+        author: 'Amrendra Singh',
         tech: ['TypeScript'],
         github: 'https://github.com/AmrendraTheCoder/carpool-lnmiit-work-new',
         
@@ -339,7 +340,7 @@ let projects = [
         id: 36,
         name: 'justfortheETH (MediBOX)',
         description: 'Complete MediBOX platform — blockchain-based medical platform with tokenization, DeFi features and cross-chain ideas (project README indicates healthcare/DeFi integration).',
-        author: 'Amrendra',
+        author: 'Amrendra Singh',
         tech: ['TypeScript','Solidity','Shell','Go','JavaScript','PLpgSQL'],
         github: 'https://github.com/AmrendraTheCoder/justfortheETH',
         
