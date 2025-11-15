@@ -250,7 +250,7 @@ let projects = [
         id: 27,
         name: 'sui_counter',
         description: 'Small Sui blockchain example project — a counter app demonstrating basic interactions with Sui (likely for learning/quick demo purposes).',
-        author: 'manas hatwar',
+        author: 'Manas Hatwar',
         tech: ['Move','TypeScript','HTML'],
         github: 'https://github.com/manashatwar/sui_counter',
         
@@ -349,7 +349,7 @@ let projects = [
         id: 37,
         name: 'zk-mail',
         description: 'Zero-knowledge enabled mail/reputation tooling (inferred). Repo contains reputation-engine and related modules; summary inferred from folder names and code structure.',
-        author: 'Sushmit',
+        author: 'Sushmit Sharma',
         tech: ['TypeScript','JavaScript','HTML','CSS','Rust','Shell'],
         github: 'https://github.com/Sushmit94/zk-mail',
         
@@ -358,7 +358,7 @@ let projects = [
         id: 38,
         name: 'AgriSchield_contracts',
         description: 'Smart contracts for the AgriSchield project — contains Solidity contracts and deployment scripts to manage agriculture-related on-chain logic.',
-        author: 'Sushmit',
+        author: 'Sushmit Sharma',
         tech: ['JavaScript','Solidity','Python','Ruby'],
         github: 'https://github.com/Sushmit94/AgriSchield_contracts',
         
