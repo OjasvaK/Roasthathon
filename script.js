@@ -1,7 +1,10 @@
 // Hardcoded credentials
 const USERS = {
     'admin': { password: 'password', name: 'Admin User', role: 'Admin' },
-    'user': { password: 'user123', name: 'Club Member', role: 'Developer' }
+    'Ojasva': { password: 'ok123', name: 'Club Member', role: 'Developer' },
+    'Vatsal': { password: 'vs123', name: 'Club Member', role: 'Developer' },
+    'Harshit': { password: 'hl123', name: 'Club Member', role: 'Developer' },
+    'Dinesh': { password: 'ds123', name: 'Club Member', role: 'Developer' }
 };
 
 // Sample data
@@ -13,7 +16,7 @@ let projects = [
         name: 'Solana Defi POrtfolio',
         description: 'A sophisticated dynamic portfolio rebalancing system built on Solana that automatically adjusts rebalancing thresholds based on market volatility conditions. ',
         author: 'Rudransh Shinghal',
-        tech: ['Defi'],
+        tech: ['Rust','Typescript','JavaScript'],
         github: 'https://github.com/Ansh1902396/portfolio-rebalancer',
         
     },
@@ -22,16 +25,16 @@ let projects = [
         name: 'Clanker Dex',
         description: 'A modern decentralized exchange (DEX) dashboard built for trading Clanker tokens on Uniswap V4.',
         author: 'Rudransh Shinghal',
-        tech: ['Dex'],
+        tech: ['Typescript','JavaScript','CSS'],
         github: 'https://github.com/Ansh1902396/Clanker-Dex',
         
     },
     {
         id: 3,
-        name: 'N3 - Nuclie for Web3',
+        name: 'N3 - Nuclei for Web3',
         description: 'Template-Based Security Scanner for Smart Contracts & DApps',
-        author: 'Arya Sekhar Das',
-        tech: ['Web3'],
+        author: 'K Arya Sekhar Das',
+        tech: ['TypeScript','Solidity','JavaScript','Shell'],
         github: 'https://github.com/intelligent-ears/N3',
         
     },
@@ -39,8 +42,8 @@ let projects = [
         id: 4,
         name: 'CrypX - Modular Cryptanalysis Framework',
         description: 'CrypX is a web-based cryptanalysis framework that allows users to analyze custom block cipher implementations',
-        author: 'Arya Sekhar Das',
-        tech: ['JavaScript', 'Canvas API', 'WebGL'],
+        author: 'K Arya Sekhar Das',
+        tech: ['Python'],
         github: 'https://github.com/intelligent-ears/CrypX',
         
     },
@@ -48,8 +51,8 @@ let projects = [
         id: 5,
         name: 'SolSniffer ',
         description: 'SolSniffer is a static analysis tool for Solidity smart contracts, built in Python.',
-        author: 'Arya Sekhar Das',
-        tech: ['JavaScript', 'Canvas API', 'WebGL'],
+        author: 'K Arya Sekhar Das',
+        tech: ['python','Solidity','JavaScript'],
         github: 'https://github.com/intelligent-ears/SolSniffer',
         
     },
@@ -58,7 +61,7 @@ let projects = [
         name: 'Web_Pen_Tool_FSE',
         description: 'A command-line tool for web penetration testing including brute-force login, directory fuzzing, sub-domain discovery, and XSS detection.',
         author: 'Devarsh Parmar',
-        tech: ['JavaScript', 'Canvas API', 'WebGL'],
+        tech: ['Python'],
         github: 'https://github.com/DEVMYTH123/Web_Pen_Tool_FSE',
         
     },
@@ -67,7 +70,7 @@ let projects = [
         name: 'Smart-Vending-Machine',
         description: 'An IoT-enabled vending machine using Arduino Mega, ZigBee, RFID and sensors to automate item dispensing and update owner/customer data in real time',
         author: 'Parth Garg',
-        tech: ['JavaScript', 'Canvas API', 'WebGL'],
+        tech: ['C++','JavaScript','HTML'],
         github: 'https://github.com/parthgarg351/Smart-Vending-Machine',
         
     },
@@ -76,7 +79,7 @@ let projects = [
         name: 'Smart-table-Clock',
         description: 'A microcontroller-based smart clock that displays time digitally and integrates additional features like alarms, sensors, or automation to function as an enhanced table-top utility device.',
         author: 'Parth Garg',
-        tech: ['JavaScript', 'Canvas API', 'WebGL'],
+        tech: ['C++','JavaScript'],
         github: 'https://github.com/parthgarg351/Smart-Table-Clock',
         
     },
@@ -85,7 +88,7 @@ let projects = [
         name: 'd8n',
         description: 'A no-code builder for DeFi workflows allowing users to visually design, automate and execute complex on-chain logic without writing code.',
         author: 'Lakshya Jain',
-        tech: ['JavaScript', 'Canvas API', 'WebGL'],
+        tech: ['JavaScript', 'TypeScript'],
         github: 'https://github.com/projectman14/d8n',
         
     },
@@ -94,7 +97,7 @@ let projects = [
         name: 'Chainlink price Predictor',
         description: 'A Python-based project that uses historical price data from Chainlink oracle feeds and combines neural networks (RNN, LSTM, GRU) with LLM-generated custom loss functions to predict Ethereum (ETH) prices.',
         author: 'Siddhartha Swarnkar',
-        tech: ['JavaScript', 'Canvas API', 'WebGL'],
+        tech: ['Python'],
         github: 'https://github.com/bismuth01/chainlink-price-predictor',
         
     },
@@ -103,7 +106,7 @@ let projects = [
         name: 'Puch AI Virtual Pet',
         description: 'A virtual pet application powered by the Puch AI framework that allows users to interact with, care for, and play with an AI-driven pet whose behaviours adapt over time.',
         author: 'Siddhartha Swarnkar',
-        tech: ['JavaScript', 'Canvas API', 'WebGL'],
+        tech: ['Python'],
         github: 'https://github.com/bismuth01/puch-ai-virtual-pet',
         
     },
@@ -112,7 +115,7 @@ let projects = [
         name: 'rpg-verse-agentic',
         description: 'A hackathon-winning “AI-powered multiverse” project that blends MMORPG mechanics with Web3 technologies—creating an immersive agentic universe where players, AI agents, and blockchain elements interact.',
         author: 'Harshit Nayan',
-        tech: ['JavaScript', 'Canvas API', 'WebGL'],
+        tech: ['JavaScript', 'TypeScript','Vue'],
         github: 'https://github.com/LogicalGuy77/rpg-verse-agentic',
         
     },
@@ -121,7 +124,7 @@ let projects = [
         name: 'tokenyzer',
         description: 'A utility tool designed to analyze and manipulate tokens—likely for blockchain assets or smart-contract workflows—facilitating deeper insight and management of token interactions.',
         author: 'Harshit Nayan',
-        tech: ['JavaScript', 'Canvas API', 'WebGL'],
+        tech: ['JavaScript', 'HTML','CSS','Solidity'],
         github: 'https://github.com/LogicalGuy77/tokenyzer',
         
     },
@@ -130,7 +133,7 @@ let projects = [
         name: 'memory-frontend-faff',
         description: 'A front-end project for a “memory” (or recall)-oriented interface/game, focusing on a layered structure of Experience → Logic → Memory → Growth.',
         author: 'Harshit Nayan',
-        tech: ['Python', 'TensorFlow', 'Flask'],
+        tech: ['JavaScript'],
         github: 'https://github.com/LogicalGuy77/memory-frontend-faff',
         
     },
@@ -139,7 +142,7 @@ let projects = [
         name: 'memecoin-agent-frontend',
         description: 'A frontend application for an AI agent that analyzes memecoin market data, adapts to changing conditions, and provides real-time insights using large language models.',
         author: 'Harshit Nayan',
-        tech: ['React', 'Web3.js', 'Solidity'],
+        tech: ['JavaScript','CSS','HTML'],
         github: 'https://github.com/LogicalGuy77/memecoin-agent-frontend',
         
     },
@@ -148,7 +151,7 @@ let projects = [
         name: 'weekendly-atlan',
         description: 'A weekend-activity planner app featuring a drag-and-drop interface, real-time weather insights, and AI-generated shareable visuals of your itinerary.',
         author: 'Harshit Nayan',
-        tech: ['Electron', 'Vue.js', 'SQLite'],
+        tech: ['JavaScript','TypeScript','HTML','CSS'],
         github: 'https://github.com/LogicalGuy77/weekendly-atlan',
         
     },
@@ -157,7 +160,7 @@ let projects = [
         name: 'BlockStay',
         description: 'A blockchain-powered platform that enables AI-driven booking of stays and accommodations using crypto payments and decentralized technology.',
         author: 'Manan Singhal',
-        tech: ['Electron', 'Vue.js', 'SQLite'],
+        tech: ['JavaScript','TypeScript','Move'],
         github: 'https://github.com/MananSinghal123/BlockStay',
         
     },
@@ -166,7 +169,7 @@ let projects = [
         name: 'eth-api-payments',
         description: 'A backend service designed to facilitate Ethereum-based payments via an API, enabling applications to initiate, track, and manage crypto transactions programmatically.',
         author: 'Manan Singhal',
-        tech: ['Electron', 'Vue.js', 'SQLite'],
+        tech: ['JavaScript','TypeScript','Rust','Solidity','CSS','Docker'],
         github: 'https://github.com/MananSinghal123/eth-api-payments',
         
     },
@@ -175,7 +178,7 @@ let projects = [
         name: 'BTCShield',
         description: 'A DeFi platform for BTC lending and borrowing that employs a three-phase backstop mechanism using reversible call options to reduce liquidation risk and support institutional-grade positions.',
         author: 'Manan Singhal',
-        tech: ['Electron', 'Vue.js', 'SQLite'],
+        tech: ['TypeScript','JavaScript','CSS'],
         github: 'https://github.com/MananSinghal123/BTCShield',
         
     },
@@ -184,7 +187,7 @@ let projects = [
         name: 'Education Agent',
         description: 'An AI-powered educational assistant aimed at optimising learning experiences through intelligent agent-driven tutoring and resource recommendations',
         author: 'Ayush Petwal',
-        tech: ['Electron', 'Vue.js', 'SQLite'],
+        tech: ['TypeScript','JavaScript','CSS','Shell','Cadence'],
         github: 'https://github.com/1Ayush-Petwal/Education-Agent',
         
     },
@@ -193,7 +196,7 @@ let projects = [
         name: 'CitreaMesh',
         description: 'A Model-Context-Protocol (MCP) server for the Citrea testnet that lets LLM-based assistants perform on-chain actions like wallet balance checks, faucet claims, ERC-20 token deployment, transfers and wallet',
         author: 'Ayush Petwal',
-        tech: ['Electron', 'Vue.js', 'SQLite'],
+        tech: ['TypeScript','JavaScript',],
         github: 'https://github.com/1Ayush-Petwal/CitreaMesh',
         
     },
@@ -202,7 +205,7 @@ let projects = [
         name: 'X-Bid: Cross-Chain NFT Auction Platform',
         description: 'Decentralized cross-chain NFT auction platform (X-Bid). Sellers set intent (preferred chain/token); bidders from other chains can participate. Uses Avail Nexus SDK for cross-chain interoperability and automates bridging, swapping and settlement.',
         author: 'Arijit Roy , Vaibhav Goyal , KAvish ',
-        tech: ['Electron', 'Vue.js', 'SQLite'],
+        tech: ['TypeScript','Solidity'],
         github: 'https://github.com/arijitroy667/auction_cc',
     
     },
@@ -211,7 +214,7 @@ let projects = [
         name: 'Stargazer',
         description: 'Modern social media web application for posting, discovering content and connecting users. Frontend/back-end web app for sharing and engagement.',
         author: 'Arijit Roy',
-        tech: ['Electron', 'Vue.js', 'SQLite'],
+        tech: ['TypeScript','CSS',],
         github: 'https://github.com/arijitroy667/stargazer-social-galaxy',
         
     },
@@ -220,7 +223,7 @@ let projects = [
         name: 'Vaultopia - ERC-4626 DeFi Vault',
         description: 'Modular, upgradeable DeFi vault for USDC implementing ERC-4626. Supports yield strategies (e.g., Lido staking), uses Diamond Standard (ERC-2535) for modularity, and offers liquidity management (partial liquid / partial locked) for yield generation.',
         author: 'Arijit Roy',
-        tech: ['Electron', 'Vue.js', 'SQLite'],
+        tech: ['TypeScript','CSS','Solidity','JavaScript'],
         github: 'https://github.com/arijitroy667/Vaultopia',
         
     },
@@ -229,7 +232,7 @@ let projects = [
         name: 'NebulaDAo',
         description: 'Simple DAO implementation for creating and executing proposals on EVM chains. Implements governance primitives to propose, vote and execute on-chain actions.',
         author: 'Arijit Roy',
-        tech: ['Electron', 'Vue.js', 'SQLite'],
+        tech: ['TypeScript','JavaScript','Solidity','CSS'],
         github: 'https://github.com/arijitroy667/NebulaDAO',
         
     },
@@ -238,7 +241,7 @@ let projects = [
         name: 'Currency- Exchanger ',
         description: 'A lightweight web app to view currency exchange rates globally. Likely fetches rates from an API and displays conversion results and rates for requested currencies.',
         author: 'Vaibhav Rawat',
-        tech: ['Electron', 'Vue.js', 'SQLite'],
+        tech: ['JavaScript','CSS','HTML'],
         github: 'https://github.com/Vaibhav-Rawat-cipher/Currency-Exchanger',
         
     },
@@ -247,7 +250,7 @@ let projects = [
         name: 'sui_counter',
         description: 'Small Sui blockchain example project — a counter app demonstrating basic interactions with Sui (likely for learning/quick demo purposes).',
         author: 'manas hatwar',
-        tech: ['Electron', 'Vue.js', 'SQLite'],
+        tech: ['Move','TypeScript','HTML'],
         github: 'https://github.com/manashatwar/sui_counter',
         
     },
@@ -256,7 +259,7 @@ let projects = [
         name: 'VigilBot',
         description: 'Blockchain-based system to detect and categorize trading bots using real-time price feeds (Pyth). Analyzes trading patterns and reaction times to classify actors (human / good bot / bad bot) and flag suspicious automated behavior.',
         author: 'Rudra Bhaskar',
-        tech: ['Electron', 'Vue.js', 'SQLite'],
+        tech: ['JavaScript','TypeScript','HTML','CSS','Solidity','Shell'],
         github: 'https://github.com/RudraBhaskar9439/VigilBot',
         
     },
@@ -265,7 +268,7 @@ let projects = [
         name: 'Rehypothecation_UniswapV4_Hook',
         description: 'Smart-contract prototype integrating with Uniswap V4 hooks to enable rehypothecation patterns — reusing collateral/liquidity via hooks. Contains contract code and example integrations for Uniswap V4.',
         author: 'Rudra Bhaskar',
-        tech: ['Electron', 'Vue.js', 'SQLite'],
+        tech: ['Solidity'],
         github: 'https://github.com/RudraBhaskar9439/Rehypothecation_UniswapV4_Hook',
         
     },
@@ -274,7 +277,7 @@ let projects = [
         name: 'Machine Learning Data Illustrator',
         description: 'Streamlit-based ML web application for building, training and evaluating models through an interactive UI. Supports dataset upload, model selection, training and visualization of results/metrics.',
         author: 'Rudra Bhaskar',
-        tech: ['Electron', 'Vue.js', 'SQLite'],
+        tech: ['Python','Shell'],
         github: 'https://github.com/RudraBhaskar9439/Machine_Learning_Data_Illustrator',
         
     },
@@ -283,7 +286,7 @@ let projects = [
         name: 'BlockChain_Drive (ChainDrive)',
         description: 'DApp for uploading files/images to IPFS and sharing access with Ethereum addresses. Uses smart contracts for access control and Pinata/IPFS for storage; users can upload, view and share securely on-chain.',
         author: 'Rudra Bhaskar',
-        tech: ['Electron', 'Vue.js', 'SQLite'],
+        tech: ['JavaScript','HTML','CSS','Solidity'],
         github: 'https://github.com/RudraBhaskar9439/BlockChain_Drive',
         
     },
@@ -292,7 +295,7 @@ let projects = [
         name: 'INVOx',
         description: 'INVOx — repository with frontend/backend tooling (README limited). Likely a web app; README not present or minimal, so summary inferred from code structure and files.',
         author: 'Vaibhav Goyal',
-        tech: ['Electron', 'Vue.js', 'SQLite'],
+        tech: ['JavaScript','Solidity'],
         github: 'https://github.com/viscous-236/INVOx',
         
     },
@@ -301,7 +304,7 @@ let projects = [
         name: 'chromion-chainlink',
         description: 'Integration project linking Chromion (or similar) components with Chainlink — likely demonstrating or implementing Chainlink oracle integrations for a dApp.',
         author: 'Vaibhav Goyal',
-        tech: ['Electron', 'Vue.js', 'SQLite'],
+        tech: ['Solidity','Python'],
         github: 'https://github.com/viscous-236/chromion-chainlink',
         
     },
@@ -310,7 +313,7 @@ let projects = [
         name: 'AgriSchield',
         description: 'Integration project linking Chromion (or similar) components with Chainlink — likely demonstrating or implementing Chainlink oracle integrations for a dApp.',
         author: 'Kavish',
-        tech: ['Electron', 'Vue.js', 'SQLite'],
+        tech: ['JavaScript'],
         github: 'https://github.com/Kavish-12345/AgriSchield-',
         
     },
@@ -319,7 +322,7 @@ let projects = [
         name: 'Medical Dashboard',
         description: 'ETHGlobal final project — a healthcare/medical dashboard combining modern UI/UX with blockchain integration for patient or data management and visualization.',
         author: 'Komal Jeengar',
-        tech: ['Electron', 'Vue.js', 'SQLite'],
+        tech: ['TypeScript','Solidity','CSS'],
         github: 'https://github.com/komaljeengar/ethglobal-final-project',
         
     },
@@ -328,7 +331,7 @@ let projects = [
         name: 'carpool-lnmiit-work-new',
         description: 'Carpooling application/work-in-progress repository (frontend/backend). README minimal; inferred to be a ride-sharing/carpool coordination app for LNMIIT community.',
         author: 'Amrendra',
-        tech: ['Electron', 'Vue.js', 'SQLite'],
+        tech: ['TypeScript'],
         github: 'https://github.com/AmrendraTheCoder/carpool-lnmiit-work-new',
         
     },
@@ -337,7 +340,7 @@ let projects = [
         name: 'justfortheETH (MediBOX)',
         description: 'Complete MediBOX platform — blockchain-based medical platform with tokenization, DeFi features and cross-chain ideas (project README indicates healthcare/DeFi integration).',
         author: 'Amrendra',
-        tech: ['Electron', 'Vue.js', 'SQLite'],
+        tech: ['TypeScript','Solidity','Shell','Go','JavaScript','PLpgSQL'],
         github: 'https://github.com/AmrendraTheCoder/justfortheETH',
         
     },
@@ -346,7 +349,7 @@ let projects = [
         name: 'zk-mail',
         description: 'Zero-knowledge enabled mail/reputation tooling (inferred). Repo contains reputation-engine and related modules; summary inferred from folder names and code structure.',
         author: 'Sushmit',
-        tech: ['Electron', 'Vue.js', 'SQLite'],
+        tech: ['TypeScript','JavaScript','HTML','CSS','Rust','Shell'],
         github: 'https://github.com/Sushmit94/zk-mail',
         
     },
@@ -355,7 +358,7 @@ let projects = [
         name: 'AgriSchield_contracts',
         description: 'Smart contracts for the AgriSchield project — contains Solidity contracts and deployment scripts to manage agriculture-related on-chain logic.',
         author: 'Sushmit',
-        tech: ['Electron', 'Vue.js', 'SQLite'],
+        tech: ['JavaScript','Solidity','Python','Ruby'],
         github: 'https://github.com/Sushmit94/AgriSchield_contracts',
         
     },
@@ -364,7 +367,7 @@ let projects = [
         name: 'sheet-ai-pro-backup',
         description: 'Backup repo for Sheet AI project — includes guides (CELL-FORMATTING-GUIDE.md) and tooling for spreadsheet automation; README limited.',
         author: 'Arpit Mishra',
-        tech: ['Electron', 'Vue.js', 'SQLite'],
+        tech: ['javaScript','CSS','PLpgSQL'],
         github: 'https://github.com/arpitmisra/sheet-ai-pro-backup',
         
     },
@@ -373,9 +376,9 @@ let projects = [
         name: 'EnvioScout AI',
         description: 'AI-powered blockchain analytics assistant using Envio HyperSync indexing, Google Gemini AI and Blockscout REST API to answer natural-language queries about transactions, gas fees, block times and network statistics across EVM chains.',
         author: 'Arpit Mishra',
-        tech: ['Electron', 'Vue.js', 'SQLite'],
+        tech: ['JavaScript','CSS','HTML'],
         github: 'https://github.com/arpitmisra/envioscout-ai',
-        
+
     }
 ];
 
