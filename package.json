@@ -1,26 +1,19 @@
 {
-  "name": "club-showcase",
+  "name": "devbit-forum",
   "version": "1.0.0",
-  "description": "Full-stack club showcase application",
-  "main": "api/index.js",
+  "description": "8-Bit themed developer forum and project showcase",
+  "main": "index.html",
   "scripts": {
-    "dev": "concurrently \"cd club-showcase-backend && npm run dev\" \"cd club-showcase-frontend && npm start\"",
-    "build": "cd club-showcase-frontend && npm install && npm run build",
-    "start": "node api/index.js",
-    "backend": "cd club-showcase-backend && npm run dev",
-    "frontend": "cd club-showcase-frontend && npm start"
+    "start": "npx serve .",
+    "deploy": "surge . devbit-forum.surge.sh"
   },
-  "dependencies": {
-    "express": "^4.18.2",
-    "mongoose": "^7.0.0",
-    "cors": "^2.8.5",
-    "bcryptjs": "^2.4.3",
-    "jsonwebtoken": "^9.0.0",
-    "express-validator": "^7.0.0",
-    "dotenv": "^16.0.3"
-  },
-  "devDependencies": {
-    "concurrently": "^7.0.0",
-    "nodemon": "^2.0.20"
-  }
+  "keywords": [
+    "forum",
+    "8-bit",
+    "retro",
+    "developer",
+    "community"
+  ],
+  "author": "Your Club Name",
+  "license": "MIT"
 }

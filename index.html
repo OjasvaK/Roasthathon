@@ -1,0 +1,217 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cipher Showcase - 8-Bit Project Platform</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap" rel="stylesheet">
+</head>
+<body>
+    <!-- Login Screen -->
+    <div id="loginScreen" class="screen active">
+        <div class="login-container pixel-border">
+            <h1 class="glitch" data-text="CIPHER SHOWCASE">CIPHER SHOWCASE</h1>
+            <div class="pixel-art-logo">
+                <img src="cipher 1.png" alt="Cipher Logo" style="width: 200px; height: auto;">
+            </div>
+            <form id="loginForm" class="login-form">
+                <div class="form-group">
+                    <label for="username">USERNAME:</label>
+                    <input type="text" id="username" class="pixel-input" placeholder="Enter username" required>
+                </div>
+                <div class="form-group">
+                    <label for="password">PASSWORD:</label>
+                    <input type="password" id="password" class="pixel-input" placeholder="Enter password" required>
+                </div>
+                <button type="submit" class="pixel-button">START</button>
+                <div class="hint">
+                    Hint: Try "admin" / "password" or "user" / "user123"
+                </div>
+            </form>
+        </div>
+        <div class="pixel-clouds"></div>
+    </div>
+
+    <!-- Main App -->
+    <div id="mainApp" class="screen">
+        <!-- Header -->
+        <header class="main-header pixel-border">
+            <div class="header-content">
+                <h1 class="logo"><img src="cipher 1.png" alt="Cipher Logo" style="width: 50px; height: auto; vertical-align: middle; margin-right: 15px;"> CIPHER SHOWCASE</h1>
+                <nav class="main-nav">
+                    <button class="nav-btn active" data-tab="projects">PROJECTS</button>
+                    <button class="nav-btn" data-tab="forum">IDEAS</button>
+                    <button class="nav-btn" data-tab="profile">PROFILE</button>
+                </nav>
+                <div class="user-info">
+                    <span class="pixel-coin">★</span>
+                    <span id="currentUser">Player 1</span>
+                    <button id="logoutBtn" class="pixel-button-small">LOGOUT</button>
+                </div>
+            </div>
+            <div class="pixel-divider"></div>
+        </header>
+
+        <!-- Projects Tab -->
+        <div id="projectsTab" class="tab-content active">
+            <div class="container">
+                <div class="section-header">
+                    <h2>🎮 CIPHER SHOWCASE 🎮</h2>
+                    <button id="addProjectBtn" class="pixel-button">+ NEW PROJECT</button>
+                </div>
+                <div class="filter-container">
+                    <label for="authorFilter">Filter by Author:</label>
+                    <select id="authorFilter" class="pixel-input">
+                        <option value="all">All Authors</option>
+                    </select>
+                </div>
+                <div id="projectsGrid" class="projects-grid"></div>
+            </div>
+        </div>
+
+        <!-- Forum Tab -->
+        <div id="forumTab" class="tab-content">
+            <div class="container">
+                <div class="section-header">
+                    <h2>💡 IDEA PROPOSALS 💡</h2>
+                    <button id="addIdeaBtn" class="pixel-button">+ PROPOSE IDEA</button>
+                </div>
+                <div class="filter-container">
+                    <label for="categoryFilter">Filter by Category:</label>
+                    <select id="categoryFilter" class="pixel-input">
+                        <option value="all">All Categories</option>
+                        <option value="web">Web Development</option>
+                        <option value="mobile">Mobile App</option>
+                        <option value="ai">AI/ML</option>
+                        <option value="game">Game Dev</option>
+                        <option value="other">Other</option>
+                    </select>
+                </div>
+                <div id="ideasList" class="ideas-list"></div>
+            </div>
+        </div>
+
+        <!-- Profile Tab -->
+        <div id="profileTab" class="tab-content">
+            <div class="container">
+                <div class="profile-card pixel-border">
+                    <div class="profile-header">
+                        <div class="avatar-large">👨‍💻</div>
+                        <div class="profile-info">
+                            <h2 id="profileName">Player 1</h2>
+                            <p class="profile-role">Developer | Innovator</p>
+                            <div class="stats">
+                                <div class="stat">
+                                    <span class="stat-value">5</span>
+                                    <span class="stat-label">Projects</span>
+                                </div>
+                                <div class="stat">
+                                    <span class="stat-value">12</span>
+                                    <span class="stat-label">Ideas</span>
+                                </div>
+                                <div class="stat">
+                                    <span class="stat-value">48</span>
+                                    <span class="stat-label">Comments</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="achievements">
+                        <h3>🏆 ACHIEVEMENTS 🏆</h3>
+                        <div class="achievement-list">
+                            <span class="badge">First Project</span>
+                            <span class="badge">Idea Master</span>
+                            <span class="badge">Team Player</span>
+                            <span class="badge">Code Warrior</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Modal for New Project -->
+    <div id="projectModal" class="modal">
+        <div class="modal-content pixel-border">
+            <div class="modal-header">
+                <h2>ADD NEW PROJECT</h2>
+                <button class="close-btn">&times;</button>
+            </div>
+            <form id="projectForm">
+                <div class="form-group">
+                    <label>PROJECT NAME:</label>
+                    <input type="text" id="projectName" class="pixel-input" required>
+                </div>
+                <div class="form-group">
+                    <label>DESCRIPTION:</label>
+                    <textarea id="projectDesc" class="pixel-input" rows="3" required></textarea>
+                </div>
+                <div class="form-group">
+                    <label>TECH STACK:</label>
+                    <input type="text" id="projectTech" class="pixel-input" placeholder="e.g., React, Node.js, MongoDB" required>
+                </div>
+                <div class="form-group">
+                    <label>GITHUB URL:</label>
+                    <input type="url" id="projectGithub" class="pixel-input">
+                </div>
+                <button type="submit" class="pixel-button">SUBMIT</button>
+            </form>
+        </div>
+    </div>
+
+    <!-- Modal for New Idea -->
+    <div id="ideaModal" class="modal">
+        <div class="modal-content pixel-border">
+            <div class="modal-header">
+                <h2>PROPOSE NEW IDEA</h2>
+                <button class="close-btn">&times;</button>
+            </div>
+            <form id="ideaForm">
+                <div class="form-group">
+                    <label>IDEA TITLE:</label>
+                    <input type="text" id="ideaTitle" class="pixel-input" required>
+                </div>
+                <div class="form-group">
+                    <label>DESCRIPTION:</label>
+                    <textarea id="ideaDesc" class="pixel-input" rows="4" required></textarea>
+                </div>
+                <div class="form-group">
+                    <label>CATEGORY:</label>
+                    <select id="ideaCategory" class="pixel-input" required>
+                        <option value="web">Web Development</option>
+                        <option value="mobile">Mobile App</option>
+                        <option value="ai">AI/ML</option>
+                        <option value="game">Game Dev</option>
+                        <option value="other">Other</option>
+                    </select>
+                </div>
+                <button type="submit" class="pixel-button">POST IDEA</button>
+            </form>
+        </div>
+    </div>
+
+    <!-- Modal for Idea Details -->
+    <div id="ideaDetailModal" class="modal">
+        <div class="modal-content pixel-border modal-large">
+            <div class="modal-header">
+                <h2 id="ideaDetailTitle">IDEA DETAILS</h2>
+                <button class="close-btn">&times;</button>
+            </div>
+            <div id="ideaDetailContent"></div>
+            <div class="comments-section">
+                <h3>💬 COMMENTS</h3>
+                <div id="commentsList"></div>
+                <form id="commentForm" class="comment-form">
+                    <textarea id="commentText" class="pixel-input" rows="2" placeholder="Add your comment..."></textarea>
+                    <button type="submit" class="pixel-button">POST</button>
+                </form>
+            </div>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
