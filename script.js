@@ -14,7 +14,7 @@ let currentUser = null;
 let projects = [
     {
         id: 1,
-        name: 'Solana Defi POrtfolio',
+        name: 'Solana Defi Portfolio',
         description: 'A sophisticated dynamic portfolio rebalancing system built on Solana that automatically adjusts rebalancing thresholds based on market volatility conditions. ',
         author: 'Rudransh Shinghal',
         tech: ['Rust','Typescript','JavaScript'],
@@ -399,7 +399,7 @@ let currentIdeaId = null;
 // Initialize when DOM is ready
 document.addEventListener('DOMContentLoaded', initializeApp);
 
-function initializeApp() {
+function initializeApp() {  
     console.log('🎮 DevBit Forum loading...');
     
     // Initialize DOM Elements
